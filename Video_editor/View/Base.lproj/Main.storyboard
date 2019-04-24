@@ -172,7 +172,7 @@
                     <view key="view" contentMode="scaleToFill" id="6C0-d9-dXR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.09398312121629715" green="0.097989507019519806" blue="0.10214538127183914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Yri-re-4sd"/>
                     </view>
                     <navigationItem key="navigationItem" title="프로젝트" id="hwe-Ac-e4E"/>
@@ -184,19 +184,20 @@
         <!--위에서 올라오는 사이드뷰(table VC)-->
         <scene sceneID="tD8-sd-Kai">
             <objects>
-                <tableViewController id="xN4-Hk-woi" userLabel="위에서 올라오는 사이드뷰(table VC)" customClass="SettingVC" sceneMemberID="viewController">
+                <tableViewController id="xN4-Hk-woi" userLabel="위에서 올라오는 사이드뷰(table VC)" customClass="SettingVC" customModule="Video_editor" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ix9-A7-Occ" customClass="SettingVc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.12143168598413467" green="0.12544235587120056" blue="0.12959405779838562" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="0.12143168598413467" green="0.12544235587120056" blue="0.12959405779838562" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.25094899535179138" green="0.25099846720695496" blue="0.25094583630561829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="CMz-Vx-jsk">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.09398312121629715" green="0.097989507019519806" blue="0.10214538127183914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <items>
-                                <navigationItem title="Title" id="KqR-RA-CLf">
-                                    <barButtonItem key="leftBarButtonItem" title="back" id="zKi-OV-83P">
+                                <navigationItem title="설정" largeTitleDisplayMode="always" id="KqR-RA-CLf">
+                                    <barButtonItem key="leftBarButtonItem" title="확인" id="zKi-OV-83P">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <segue destination="QnN-H5-pC2" kind="unwind" unwindAction="back_Action:" id="hPo-Gg-kQU"/>
@@ -205,6 +206,36 @@
                                 </navigationItem>
                             </items>
                         </navigationBar>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="Iqj-kU-SWt" userLabel="emptyView">
+                            <rect key="frame" x="0.0" y="152" width="375" height="66"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CCl-YH-qiq">
+                                    <rect key="frame" x="0.0" y="31" width="375" height="29"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WpK-E4-W6E">
+                                            <rect key="frame" x="87" y="3" width="201" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <attributedString key="attributedText">
+                                                <fragment>
+                                                    <string key="content">Version : 5.9.7(5)
+9036BCF-4233-123C-AFDD-E123456789</string>
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="11" name=".AppleSDGothicNeoI-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.097917146980762482" green="0.10198558121919632" blue="0.10198847204446793" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingCell_id" rowHeight="80" id="Nm2-7Y-D6r" customClass="SettingCell" customModule="Video_editor" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="80"/>
@@ -213,7 +244,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eii-Ee-J9T">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sidemenu" translatesAutoresizingMaskIntoConstraints="NO" id="eii-Ee-J9T">
                                             <rect key="frame" x="16" y="10" width="58" height="58"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="58" id="4hn-bx-Azq"/>
@@ -223,11 +254,11 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="상점" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7b-Bl-sW3">
                                             <rect key="frame" x="105" y="16" width="254" height="46"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.25094899535179138" green="0.25099846720695496" blue="0.25094583630561829" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.12143168598413467" green="0.12544235587120056" blue="0.12959405779838562" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="Y7b-Bl-sW3" firstAttribute="leading" secondItem="eii-Ee-J9T" secondAttribute="trailing" constant="31" id="10T-sd-VZa"/>
                                         <constraint firstItem="Y7b-Bl-sW3" firstAttribute="top" secondItem="xHO-UN-pht" secondAttribute="topMargin" constant="5" id="36l-m4-Dyu"/>
@@ -238,8 +269,9 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="Y7b-Bl-sW3" secondAttribute="bottom" constant="7" id="qHd-PC-ATr"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <outlet property="SettingImg" destination="eii-Ee-J9T" id="fzn-nS-GcW"/>
+                                    <outlet property="SettingImg" destination="eii-Ee-J9T" id="Gwk-X5-IxZ"/>
                                     <outlet property="SettingLabel" destination="Y7b-Bl-sW3" id="8MB-Qu-EK4"/>
                                 </connections>
                             </tableViewCell>
