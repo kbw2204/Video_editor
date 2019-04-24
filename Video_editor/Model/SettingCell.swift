@@ -10,7 +10,8 @@ import UIKit
 
 class SettingCell: UITableViewCell {
     
-    @IBOutlet weak var SettingImg: UIImageView!
+    
+    @IBOutlet var SettingImg: UIImageView!
     @IBOutlet weak var SettingLabel: UILabel!
     
 }
