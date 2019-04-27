@@ -9,7 +9,7 @@
 import UIKit
 @IBDesignable
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var NavigationBar: UINavigationItem!
     @IBOutlet weak var Button_View: UIView!
     @IBOutlet weak var Button_View2: UIView!
@@ -48,9 +48,17 @@ class ViewController: UIViewController {
         gif_ImageView1.isUserInteractionEnabled = true
         gif_ImageView2.isUserInteractionEnabled = true
     }
+    
+    // UIImagePicker
     @objc func PhtoAction(_ sender: UITapGestureRecognizer) {
         // Do what you want
         print("버튼 뷰 클릭됬습니다.")
+        let picker = UIImagePickerController()
+        
+        picker.delegate = self
+        picker.allowsEditing = true
+        
+        self.present(picker, animated: true)
     }
     @IBAction func back_Action(_ segue: UIStoryboardSegue) {
         
