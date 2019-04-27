@@ -12,6 +12,10 @@
 		CC09B99022684EB40009E26A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC09B98E22684EB40009E26A /* Main.storyboard */; };
 		CC09B99522684EB60009E26A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC09B99322684EB60009E26A /* LaunchScreen.storyboard */; };
 		CC9F765D226DDAFA00C5DECC /* ProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F765C226DDAFA00C5DECC /* ProjectVC.swift */; };
+		CCB836E02273F46D0069735D /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB836DF2273F46D0069735D /* UIImage+Gif.swift */; };
+		CCB836E62273F5E60069735D /* vlloGif1.gif in Resources */ = {isa = PBXBuildFile; fileRef = CCB836E32273F5E50069735D /* vlloGif1.gif */; };
+		CCB836E72273F5E60069735D /* vlloGif2.gif in Resources */ = {isa = PBXBuildFile; fileRef = CCB836E42273F5E50069735D /* vlloGif2.gif */; };
+		CCB836E92273F9D70069735D /* vlloTitle.gif in Resources */ = {isa = PBXBuildFile; fileRef = CCB836E82273F9D70069735D /* vlloTitle.gif */; };
 		CCCF8156227193CE00F95575 /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCF8155227193CE00F95575 /* SettingVC.swift */; };
 		CCCF815A22719D6900F95575 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCF815922719D6900F95575 /* SettingCell.swift */; };
 		CCCF815E2271C71900F95575 /* marketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCF815D2271C71900F95575 /* marketVC.swift */; };
@@ -27,6 +31,10 @@
 		CC09B99422684EB60009E26A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC09B99622684EB60009E26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC9F765C226DDAFA00C5DECC /* ProjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectVC.swift; sourceTree = "<group>"; };
+		CCB836DF2273F46D0069735D /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		CCB836E32273F5E50069735D /* vlloGif1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vlloGif1.gif; sourceTree = "<group>"; };
+		CCB836E42273F5E50069735D /* vlloGif2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vlloGif2.gif; sourceTree = "<group>"; };
+		CCB836E82273F9D70069735D /* vlloTitle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vlloTitle.gif; sourceTree = "<group>"; };
 		CCCF8155227193CE00F95575 /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		CCCF815922719D6900F95575 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		CCCF815D2271C71900F95575 /* marketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marketVC.swift; sourceTree = "<group>"; };
@@ -92,6 +100,8 @@
 		CC09B99E22684EDC0009E26A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CCB836E12273F5D40069735D /* Gif */,
+				CCB836DF2273F46D0069735D /* UIImage+Gif.swift */,
 				CC09B99322684EB60009E26A /* LaunchScreen.storyboard */,
 				CC09B99622684EB60009E26A /* Info.plist */,
 			);
@@ -109,6 +119,16 @@
 				CCCF815D2271C71900F95575 /* marketVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		CCB836E12273F5D40069735D /* Gif */ = {
+			isa = PBXGroup;
+			children = (
+				CCB836E82273F9D70069735D /* vlloTitle.gif */,
+				CCB836E32273F5E50069735D /* vlloGif1.gif */,
+				CCB836E42273F5E50069735D /* vlloGif2.gif */,
+			);
+			path = Gif;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,7 +189,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCB836E92273F9D70069735D /* vlloTitle.gif in Resources */,
 				CC09B99522684EB60009E26A /* LaunchScreen.storyboard in Resources */,
+				CCB836E62273F5E60069735D /* vlloGif1.gif in Resources */,
+				CCB836E72273F5E60069735D /* vlloGif2.gif in Resources */,
 				CCF427842270528900E8B796 /* Assets.xcassets in Resources */,
 				CC09B99022684EB40009E26A /* Main.storyboard in Resources */,
 			);
@@ -188,6 +211,7 @@
 				CCCF815A22719D6900F95575 /* SettingCell.swift in Sources */,
 				CC9F765D226DDAFA00C5DECC /* ProjectVC.swift in Sources */,
 				CCCF81602271ED5400F95575 /* InquireVC.swift in Sources */,
+				CCB836E02273F46D0069735D /* UIImage+Gif.swift in Sources */,
 				CC09B98B22684EB40009E26A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
