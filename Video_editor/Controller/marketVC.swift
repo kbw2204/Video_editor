@@ -9,13 +9,20 @@
 import UIKit
 
 class marketVC: UIViewController {
-
+    @IBOutlet var underLine_label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // 14000 세일 취소선
+        strikethrough()
         
-        
+    }
+    // function
+    // 취소선
+    func strikethrough() {
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "￦14,000")
+        attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+        underLine_label.attributedText = attributeString
     }
     
     // 상태바 지우기
