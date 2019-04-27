@@ -24,8 +24,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kXS-yz-G0h" userLabel="Body_top_View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="free_pickture" translatesAutoresizingMaskIntoConstraints="NO" id="Mlf-AE-tTT">
-                                                <rect key="frame" x="8" y="8" width="359" height="213.00000000000023"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mlf-AE-tTT">
+                                                <rect key="frame" x="8" y="8" width="359" height="213"/>
                                                 <color key="backgroundColor" red="0.089821286499500275" green="0.10186392813920975" blue="0.11021957546472549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="213" id="Y9z-QA-MSg"/>
@@ -73,8 +73,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ll3-Vx-KsF" userLabel="Body_bottom_View">
                                         <rect key="frame" x="0.0" y="301" width="375" height="302"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="free_pickture" translatesAutoresizingMaskIntoConstraints="NO" id="dNu-IG-CZN">
-                                                <rect key="frame" x="8" y="8" width="359" height="213.00000000000023"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dNu-IG-CZN">
+                                                <rect key="frame" x="8" y="8" width="359" height="213"/>
                                                 <color key="backgroundColor" red="0.093969859182834625" green="0.097912587225437164" blue="0.10621800273656845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="213" id="7AO-Z5-QGn"/>
@@ -149,7 +149,7 @@
                                 <segue destination="Byo-8b-yrQ" kind="presentation" id="vNf-5A-Ygd"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="프로젝트" id="QVr-6k-oVx">
+                        <barButtonItem key="rightBarButtonItem" title="내 프로젝트" id="QVr-6k-oVx">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="eA1-ZO-J76" kind="show" id="dfg-0b-9xx"/>
@@ -160,13 +160,15 @@
                         <outlet property="Button_View" destination="aDp-yx-dPa" id="GX6-Cd-KxC"/>
                         <outlet property="Button_View2" destination="he0-Xb-o9P" id="2x5-P1-KXt"/>
                         <outlet property="NavigationBar" destination="MsZ-eP-9n7" id="mdL-Gj-iti"/>
+                        <outlet property="gif_ImageView1" destination="Mlf-AE-tTT" id="I9f-jS-M0r"/>
+                        <outlet property="gif_ImageView2" destination="dNu-IG-CZN" id="NFL-6X-TEB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0M4-QL-N8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1716" y="23.838080959520241"/>
         </scene>
-        <!--프로젝트-->
+        <!--내 프로젝트-->
         <scene sceneID="D75-uu-Zfq">
             <objects>
                 <viewController id="eA1-ZO-J76" customClass="ProjectVC" customModule="Video_editor" customModuleProvider="target" sceneMemberID="viewController">
@@ -176,8 +178,8 @@
                         <color key="backgroundColor" red="0.09398312121629715" green="0.097989507019519806" blue="0.10214538127183914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Yri-re-4sd"/>
                     </view>
-                    <navigationItem key="navigationItem" title="프로젝트" id="hwe-Ac-e4E">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="fwE-qy-NGp">
+                    <navigationItem key="navigationItem" title="내 프로젝트" id="hwe-Ac-e4E">
+                        <barButtonItem key="rightBarButtonItem" title="편집" id="fwE-qy-NGp">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
@@ -500,7 +502,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="free_pickture" width="1280" height="853"/>
         <image name="icon_iosArrowBack" width="38" height="102"/>
         <image name="shopCart" width="512" height="512"/>
         <image name="sidemenu" width="30" height="30"/>

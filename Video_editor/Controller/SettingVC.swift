@@ -10,6 +10,13 @@ import UIKit
 
 class SettingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var SettingLabel: UILabel!
+    @IBOutlet var SettingTableView: UITableView!
+    
+    struct settingList {
+        let icon : UIImage
+        let title : String
+    }
+    
     let list = [
         settingList(icon: #imageLiteral(resourceName: "shopCart"), title: "상점"),
         settingList(icon: #imageLiteral(resourceName: "star"), title: "평가 및 리뷰하기"),
@@ -19,14 +26,7 @@ class SettingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         settingList(icon: #imageLiteral(resourceName: "message"), title: "문의하기"),
         settingList(icon: #imageLiteral(resourceName: "Icon-eto-cc"), title: "CC 라이센스"),
     ]
-    struct settingList {
-        let icon : UIImage
-        let title : String
-    }
-    
     let cellId = "cellId1"
-    @IBOutlet var SettingTableView: UITableView!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -79,8 +79,8 @@ class SettingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             print("indexNum switch err")
         }
     }
+    //사파리로 링크열기
     func gotoUrl(url : String) {
-        //사파리로 링크열기
         if let url = URL(string: url) {
             UIApplication.shared.open(url, options: [:])
         }
