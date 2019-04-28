@@ -8,30 +8,15 @@
 
 import UIKit
 
-class InquireVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    
-    @IBOutlet var SelectedImage: UIButton!
-    
+class InquireVC: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-    }
-    
-    @IBAction func DeleteImage(_ sender: UIButton) {
-        SelectedImage.setImage(#imageLiteral(resourceName: "nil_img"), for: .normal)
-    }
-    
-    @IBAction func EditPicture(_ sender: UIButton) {
-        let picker = UIImagePickerController()
 
-        picker.delegate = self
-        picker.allowsEditing = true
         
-        self.present(picker, animated: true)
     }
-    
-    
-    
-
+    // 상태바 지우기
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }
