@@ -10,12 +10,13 @@ import UIKit
 
 class marketVC: UIViewController {
     @IBOutlet var underLine_label: UILabel!
+    @IBOutlet var saleGif: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // 14000 세일 취소선
         strikethrough()
-        
+        saleGif.image = UIImage.gif(name: "sale")
     }
     // function
     // 취소선
