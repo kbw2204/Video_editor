@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // 런치 스크린 지속시간 + 2초
-        sleep(2)
+        sleep(1)
         // 네비 바 옵션 설정
         UINavigationBar.appearance().barTintColor = UIColor.black
         UINavigationBar.appearance().tintColor = UIColor.white

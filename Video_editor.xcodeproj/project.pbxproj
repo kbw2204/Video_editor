@@ -21,6 +21,7 @@
 		CCCF815A22719D6900F95575 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCF815922719D6900F95575 /* SettingCell.swift */; };
 		CCCF815E2271C71900F95575 /* marketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCF815D2271C71900F95575 /* marketVC.swift */; };
 		CCCF81602271ED5400F95575 /* InquireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCF815F2271ED5400F95575 /* InquireVC.swift */; };
+		CCDB3F312277373600FAE65E /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB3F302277373600FAE65E /* AlertVC.swift */; };
 		CCF427842270528900E8B796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF427832270528800E8B796 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		CCCF815922719D6900F95575 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		CCCF815D2271C71900F95575 /* marketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marketVC.swift; sourceTree = "<group>"; };
 		CCCF815F2271ED5400F95575 /* InquireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquireVC.swift; sourceTree = "<group>"; };
+		CCDB3F302277373600FAE65E /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		CCF427832270528800E8B796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 				CCCF8155227193CE00F95575 /* SettingVC.swift */,
 				CCCF815F2271ED5400F95575 /* InquireVC.swift */,
 				CCCF815D2271C71900F95575 /* marketVC.swift */,
+				CCDB3F302277373600FAE65E /* AlertVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				CC09B98D22684EB40009E26A /* ViewController.swift in Sources */,
 				CCCF8156227193CE00F95575 /* SettingVC.swift in Sources */,
 				CCCF815E2271C71900F95575 /* marketVC.swift in Sources */,
+				CCDB3F312277373600FAE65E /* AlertVC.swift in Sources */,
 				CCCF815A22719D6900F95575 /* SettingCell.swift in Sources */,
 				CC9F765D226DDAFA00C5DECC /* ProjectVC.swift in Sources */,
 				CCCF81602271ED5400F95575 /* InquireVC.swift in Sources */,

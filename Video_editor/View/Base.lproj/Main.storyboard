@@ -454,6 +454,9 @@
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ButtonAction:" destination="Jer-pG-Gbn" eventType="touchUpInside" id="Mcx-mb-dHu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzC-ME-3PB" userLabel="2st">
                                                 <rect key="frame" x="119" y="8" width="105" height="76"/>
@@ -461,12 +464,15 @@
                                                     <constraint firstAttribute="width" constant="105" id="hge-kP-bKx"/>
                                                     <constraint firstAttribute="height" constant="76" id="lZN-Iu-23L"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="2모든 모션 라벨"/>
+                                                <state key="normal" title="모든 모션 라벨" image="2모든 모션 라벨"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ButtonAction:" destination="Jer-pG-Gbn" eventType="touchUpInside" id="Ih9-Je-g9V"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyx-AA-2YA" userLabel="3st">
                                                 <rect key="frame" x="229" y="8" width="105" height="76"/>
@@ -474,12 +480,15 @@
                                                     <constraint firstAttribute="width" constant="105" id="W9Y-pf-zTQ"/>
                                                     <constraint firstAttribute="height" constant="76" id="aGR-24-hsd"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="3모든 자막"/>
+                                                <state key="normal" title="모든 자막" image="3모든 자막"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ButtonAction:" destination="Jer-pG-Gbn" eventType="touchUpInside" id="HfA-zo-y4k"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOS-cK-x2b" userLabel="4st">
                                                 <rect key="frame" x="8" y="92" width="105" height="76"/>
@@ -487,12 +496,15 @@
                                                     <constraint firstAttribute="height" constant="76" id="JGa-NN-hF3"/>
                                                     <constraint firstAttribute="width" constant="105" id="xdm-Tb-4jx"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="4글자마다 스타일 설정하기"/>
+                                                <state key="normal" title="글자마다 스타일 정하기" image="4글자마다 스타일 설정하기"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ButtonAction:" destination="Jer-pG-Gbn" eventType="touchUpInside" id="IjD-V3-ZeG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X32-W2-rbc" userLabel="5st">
                                                 <rect key="frame" x="119" y="92" width="105" height="76"/>
@@ -500,12 +512,15 @@
                                                     <constraint firstAttribute="height" constant="76" id="J8q-D4-DjK"/>
                                                     <constraint firstAttribute="width" constant="105" id="h4c-d5-Z3s"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="5최근 사용 글자를"/>
+                                                <state key="normal" title="최근 사용 글자를 동일한 위치와 스타일로 사용하기" image="5최근 사용 글자를"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ButtonAction:" destination="Jer-pG-Gbn" eventType="touchUpInside" id="lDM-A7-d6v"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9V-La-Yyi" userLabel="6st">
                                                 <rect key="frame" x="232" y="92" width="105" height="76"/>
@@ -513,12 +528,15 @@
                                                     <constraint firstAttribute="width" constant="105" id="0dM-TB-H6p"/>
                                                     <constraint firstAttribute="height" constant="76" id="oBP-Ul-ICR"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="6그래픽 트랜지션"/>
+                                                <state key="normal" title="그래픽 트랜지션" image="6그래픽 트랜지션"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ButtonAction:" destination="Jer-pG-Gbn" eventType="touchUpInside" id="0JP-lv-4Nr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLU-DH-vFu" userLabel="7st">
                                                 <rect key="frame" x="8" y="176" width="105" height="76"/>
@@ -526,12 +544,15 @@
                                                     <constraint firstAttribute="height" constant="76" id="1XC-jE-rnM"/>
                                                     <constraint firstAttribute="width" constant="105" id="HOT-0A-lDS"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="7프리미엄 배경음악"/>
+                                                <state key="normal" title="프리미엄 배경음악" image="7프리미엄 배경음악"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ButtonAction:" destination="Jer-pG-Gbn" eventType="touchUpInside" id="WLg-Rb-fT8"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkK-Cq-55B" userLabel="8st">
                                                 <rect key="frame" x="119" y="176" width="105" height="76"/>
@@ -539,12 +560,15 @@
                                                     <constraint firstAttribute="width" constant="105" id="KeD-p5-4yV"/>
                                                     <constraint firstAttribute="height" constant="76" id="bue-v4-VLM"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="8프리미엄 효과음"/>
+                                                <state key="normal" title="프리미엄 효과음" image="8프리미엄 효과음"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ButtonAction:" destination="Jer-pG-Gbn" eventType="touchUpInside" id="Icn-FW-4mc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbO-XE-uTo" userLabel="9st">
                                                 <rect key="frame" x="229" y="176" width="105" height="76"/>
@@ -552,12 +576,15 @@
                                                     <constraint firstAttribute="height" constant="76" id="C8b-ZG-vB3"/>
                                                     <constraint firstAttribute="width" constant="105" id="Lcn-SI-dTk"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="9필터 보정"/>
+                                                <state key="normal" title="필터보정" image="9필터 보정"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ButtonAction:" destination="Jer-pG-Gbn" eventType="touchUpInside" id="1Wx-S5-FL1"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ta-Ct-ckC" userLabel="10st">
                                                 <rect key="frame" x="8" y="255" width="105" height="76"/>
@@ -565,12 +592,15 @@
                                                     <constraint firstAttribute="height" constant="76" id="8ei-oM-Ux3"/>
                                                     <constraint firstAttribute="width" constant="105" id="V0q-wN-AU2"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="10비디오PIP"/>
+                                                <state key="normal" title="비디오 PIP" image="10비디오PIP"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ButtonAction:" destination="Jer-pG-Gbn" eventType="touchUpInside" id="gxE-UK-yhT"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDt-kB-bJk" userLabel="11st">
                                                 <rect key="frame" x="119" y="255" width="105" height="76"/>
@@ -578,12 +608,15 @@
                                                     <constraint firstAttribute="height" constant="76" id="Txq-J8-IOU"/>
                                                     <constraint firstAttribute="width" constant="105" id="xfs-0V-MkT"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="11광고 제거"/>
+                                                <state key="normal" title="광고 제거하기" image="11광고 제거"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ButtonAction:" destination="Jer-pG-Gbn" eventType="touchUpInside" id="5OY-94-ZJA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0v-tU-XeV" userLabel="12st">
                                                 <rect key="frame" x="232" y="255" width="105" height="76"/>
@@ -591,12 +624,15 @@
                                                     <constraint firstAttribute="width" constant="105" id="nnM-rX-SdP"/>
                                                     <constraint firstAttribute="height" constant="76" id="xp5-os-cGt"/>
                                                 </constraints>
-                                                <state key="normal" title="Button" image="12coming_soon"/>
+                                                <state key="normal" title="Comming soon" image="12coming_soon"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ButtonAction:" destination="Jer-pG-Gbn" eventType="touchUpInside" id="4fT-wC-Ebr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.18024975061416626" green="0.18426975607872009" blue="0.18841210007667542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -660,6 +696,9 @@
                                                 <integer key="value" value="17"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="PurchaseButtonAction:" destination="Jer-pG-Gbn" eventType="touchUpInside" id="9Af-XI-tnA"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YcU-94-QrZ">
                                         <rect key="frame" x="39" y="404" width="45" height="45"/>
@@ -751,6 +790,9 @@
                                                 <integer key="value" value="13"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="PurchaseButtonAction:" destination="Jer-pG-Gbn" eventType="touchUpInside" id="DH4-yf-zgj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.18024975061416626" green="0.18426975607872009" blue="0.18841210007667542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -798,6 +840,21 @@
                 <exit id="i2q-ch-Yko" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2661.5999999999999" y="706.59670164917543"/>
+        </scene>
+        <!--PurchaseVC-->
+        <scene sceneID="rXT-0y-BM7">
+            <objects>
+                <viewController id="BXu-lr-xkU" customClass="PurchaseVC" customModule="Video_editor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1gu-e1-7tx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="023-TQ-4pX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXb-RR-YPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3412" y="706.59670164917543"/>
         </scene>
         <!--Navigation Bar Content View-->
         <scene sceneID="nIu-hb-Wn1">
