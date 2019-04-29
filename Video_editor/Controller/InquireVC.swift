@@ -15,15 +15,5 @@ class InquireVC: UIViewController {
 
         
     }
-<<<<<<< HEAD
-    
-    // 
-    
 
-=======
-    // 상태바 지우기
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
->>>>>>> master
 }
