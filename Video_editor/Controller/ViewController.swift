@@ -20,6 +20,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         // tap 제스쳐 등록
         addGesture()
+        
         // gif
         gif_ImageView1.image = UIImage.gif(name: "vlloGif1")
         gif_ImageView2.image = UIImage.gif(name: "vlloGif2")
