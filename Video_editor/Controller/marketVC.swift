@@ -30,12 +30,8 @@ class marketVC: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func PurchaseButtonAction(_ sender: UIButton) {
-        
-        let Purchase_alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-//        let OkAction = UIAlertAction(title: "Ok", style: .default)
-//        Purchase_alert.addAction(OkAction)
-        
+    // 구매 알람창(Touch ID) 만들기
+    func createCustimVC(ValueTitle: String, Price: String) -> UIViewController {
         let VC = UIViewController()
         let safeV = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         VC.view = safeV
@@ -73,7 +69,7 @@ class marketVC: UIViewController {
         MidView1.addSubview(Img)
         
         let titleLabel = UILabel(frame: CGRect(x: 110, y: 0, width: 200, height: 15))
-        titleLabel.text = "VLLO 풀 패키지"
+        titleLabel.text = ValueTitle
         titleLabel.center.y = (TopView.frame.height / 2) + 5
         MidView1.addSubview(titleLabel)
         
@@ -112,7 +108,7 @@ class marketVC: UIViewController {
         MidView3.addSubview(PriceListLabel)
         
         let PriceLabel = UILabel(frame: CGRect(x: (margin_x * 5) + 10, y: 0, width: 200, height: 20))
-        PriceLabel.text = "￦12,000"
+        PriceLabel.text = Price
         PriceLabel.font = UIFont.systemFont(ofSize: 25)
         PriceLabel.center.y = MidView3.frame.height / 2
         MidView3.addSubview(PriceLabel)
@@ -127,21 +123,17 @@ class marketVC: UIViewController {
         BottomView.addSubview(TouchIdImg)
         
         let TouchIdLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 150, height: 30))
-        TouchIdLabel.center.x = self.view.frame.width / 2 
+        TouchIdLabel.center.x = self.view.frame.width / 2
         TouchIdLabel.center.y = BottomView.frame.height / 2 + 25
         TouchIdLabel.text = "Touch ID로 결제"
         TouchIdLabel.font = UIFont.systemFont(ofSize: 20)
         BottomView.addSubview(TouchIdLabel)
         
-//        TopView.backgroundColor = UIColor.red
-//        MidView1.backgroundColor = UIColor.orange
-//        MidView2.backgroundColor = UIColor.yellow
-//        MidView3.backgroundColor = UIColor.green
-//        BottomView.backgroundColor = UIColor.blue
-        
-        
-        
-        
+        //        TopView.backgroundColor = UIColor.red
+        //        MidView1.backgroundColor = UIColor.orange
+        //        MidView2.backgroundColor = UIColor.yellow
+        //        MidView3.backgroundColor = UIColor.green
+        //        BottomView.backgroundColor = UIColor.blue
         safeV.addSubview(TopView)
         safeV.addSubview(MidView1)
         safeV.addSubview(MidView2)
@@ -150,21 +142,22 @@ class marketVC: UIViewController {
         
         VC.preferredContentSize.width = self.view.frame.width
         VC.preferredContentSize.height = (self.view.frame.height / 12) * 7
-//        v.backgroundColor = UIColor.red
         
-        //        self.view = v
-//        self.preferredContentSize.height = 220
-//        let purchaseImage = UIImageView(frame: CGRect(x: 0, y: 40, width: 50, height: 50))
-//        purchaseImage.image = #imageLiteral(resourceName: "touch_Id")
-//        purchaseImage.center.x = (self.view.frame.width / 2) - 11.5
-//        let Touch_id_label = UILabel(frame: CGRect(x: 0, y: 10, width: 150, height: 80))
-//        Touch_id_label.center.x = (self.view.frame.width / 2) - 11.5
-//        Touch_id_label.text = "Touch ID로 결제"
-//
-//        v.addSubview(purchaseImage)
-//        v.addSubview(Touch_id_label)
-//        VC.view = v
-        Purchase_alert.setValue(VC, forKey: "contentViewController")
+        return VC
+    }
+    @IBAction func PurchaseButtonAction(_ sender: UIButton) {
+        let Purchase_alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+//        let OkAction = UIAlertAction(title: "Ok", style: .default)
+//        Purchase_alert.addAction(OkAction)
+        // 주석
+        if sender.titleLabel!.text == "￦9,900         " {
+            let VC = createCustimVC(ValueTitle: "VLLO 풀 패키지", Price: "￦9,900")
+            Purchase_alert.setValue(VC, forKey: "contentViewController")
+        } else {
+            let VC = createCustimVC(ValueTitle: "광고제거", Price: "￦3,900")
+            Purchase_alert.setValue(VC, forKey: "contentViewController")
+        }
+    
         self.present(Purchase_alert, animated: true)
     }
     
