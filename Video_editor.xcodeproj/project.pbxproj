@@ -12,6 +12,7 @@
 		CC09B99022684EB40009E26A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC09B98E22684EB40009E26A /* Main.storyboard */; };
 		CC09B99522684EB60009E26A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC09B99322684EB60009E26A /* LaunchScreen.storyboard */; };
 		CC635E9722759ACB00935A2C /* sale.gif in Resources */ = {isa = PBXBuildFile; fileRef = CC635E9622759ACB00935A2C /* sale.gif */; };
+		CC8FF6B122783AB6002D9253 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8FF6B022783AB6002D9253 /* ListVC.swift */; };
 		CC9F765D226DDAFA00C5DECC /* ProjectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9F765C226DDAFA00C5DECC /* ProjectVC.swift */; };
 		CCB836E02273F46D0069735D /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB836DF2273F46D0069735D /* UIImage+Gif.swift */; };
 		CCB836E62273F5E60069735D /* vlloGif1.gif in Resources */ = {isa = PBXBuildFile; fileRef = CCB836E32273F5E50069735D /* vlloGif1.gif */; };
@@ -21,7 +22,6 @@
 		CCCF815A22719D6900F95575 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCF815922719D6900F95575 /* SettingCell.swift */; };
 		CCCF815E2271C71900F95575 /* marketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCF815D2271C71900F95575 /* marketVC.swift */; };
 		CCCF81602271ED5400F95575 /* InquireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCF815F2271ED5400F95575 /* InquireVC.swift */; };
-		CCDB3F312277373600FAE65E /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDB3F302277373600FAE65E /* AlertVC.swift */; };
 		CCF427842270528900E8B796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCF427832270528800E8B796 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +33,7 @@
 		CC09B99422684EB60009E26A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC09B99622684EB60009E26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC635E9622759ACB00935A2C /* sale.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sale.gif; sourceTree = "<group>"; };
+		CC8FF6B022783AB6002D9253 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		CC9F765C226DDAFA00C5DECC /* ProjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectVC.swift; sourceTree = "<group>"; };
 		CCB836DF2273F46D0069735D /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		CCB836E32273F5E50069735D /* vlloGif1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = vlloGif1.gif; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		CCCF815922719D6900F95575 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		CCCF815D2271C71900F95575 /* marketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marketVC.swift; sourceTree = "<group>"; };
 		CCCF815F2271ED5400F95575 /* InquireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquireVC.swift; sourceTree = "<group>"; };
-		CCDB3F302277373600FAE65E /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		CCF427832270528800E8B796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,7 +121,7 @@
 				CCCF8155227193CE00F95575 /* SettingVC.swift */,
 				CCCF815F2271ED5400F95575 /* InquireVC.swift */,
 				CCCF815D2271C71900F95575 /* marketVC.swift */,
-				CCDB3F302277373600FAE65E /* AlertVC.swift */,
+				CC8FF6B022783AB6002D9253 /* ListVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,9 +215,9 @@
 				CC09B98D22684EB40009E26A /* ViewController.swift in Sources */,
 				CCCF8156227193CE00F95575 /* SettingVC.swift in Sources */,
 				CCCF815E2271C71900F95575 /* marketVC.swift in Sources */,
-				CCDB3F312277373600FAE65E /* AlertVC.swift in Sources */,
 				CCCF815A22719D6900F95575 /* SettingCell.swift in Sources */,
 				CC9F765D226DDAFA00C5DECC /* ProjectVC.swift in Sources */,
+				CC8FF6B122783AB6002D9253 /* ListVC.swift in Sources */,
 				CCCF81602271ED5400F95575 /* InquireVC.swift in Sources */,
 				CCB836E02273F46D0069735D /* UIImage+Gif.swift in Sources */,
 				CC09B98B22684EB40009E26A /* AppDelegate.swift in Sources */,
