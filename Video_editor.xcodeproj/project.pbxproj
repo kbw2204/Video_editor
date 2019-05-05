@@ -68,7 +68,6 @@
 				EAD4B7A2CDBAE90FA6B4B7E2 /* Pods-Video_editor.debug.xcconfig */,
 				0D7A938CEF4A3CE31696145D /* Pods-Video_editor.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
