@@ -1,0 +1,6 @@
+framework module Pods_Video_editor {
+  umbrella header "Pods-Video_editor-umbrella.h"
+
+  export *
+  module * { export * }
+}
