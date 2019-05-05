@@ -894,6 +894,9 @@
                                         <state key="normal" title="Send">
                                             <color key="titleColor" red="0.36048799749999999" green="0.47660046820000002" blue="0.58897262809999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="SendAction:" destination="DRq-Sn-f3V" eventType="touchUpInside" id="Elp-u8-7BM"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animal" translatesAutoresizingMaskIntoConstraints="NO" id="x17-oM-Fwb">
                                         <rect key="frame" x="158" y="0.0" width="59" height="44"/>
@@ -926,14 +929,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnG-w4-iA4">
                                 <rect key="frame" x="0.0" y="110" width="375" height="261"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Please enter your email address" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="br6-Sb-0XW">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="br6-Sb-0XW">
                                         <rect key="frame" x="8" y="8" width="215" height="245"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="245" id="Oqg-BX-agV"/>
                                         </constraints>
-                                        <color key="textColor" red="0.36048799749999999" green="0.47660046820000002" blue="0.58897262809999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjB-eS-S9f">
@@ -1014,6 +1016,7 @@
                     </view>
                     <connections>
                         <outlet property="SelectedImage" destination="xjB-eS-S9f" id="HuC-r4-KPc"/>
+                        <outlet property="TextView" destination="br6-Sb-0XW" id="eTw-Wj-t5g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Rp-Ry-Ebf" userLabel="First Responder" sceneMemberID="firstResponder"/>
