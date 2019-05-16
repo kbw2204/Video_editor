@@ -929,10 +929,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnG-w4-iA4">
-                                <rect key="frame" x="0.0" y="110" width="375" height="267"/>
+                                <rect key="frame" x="0.0" y="110" width="375" height="261"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="br6-Sb-0XW">
-                                        <rect key="frame" x="8" y="6.5" width="215" height="253.5"/>
+                                        <rect key="frame" x="8" y="6.5" width="215" height="247.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -951,7 +951,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snx-Kg-WvC">
-                                        <rect key="frame" x="280" y="64" width="30" height="27"/>
+                                        <rect key="frame" x="280.5" y="64.5" width="30" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -973,22 +973,20 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="xjB-eS-S9f" secondAttribute="trailing" constant="21" id="4ag-c9-niD"/>
                                     <constraint firstItem="xjB-eS-S9f" firstAttribute="leading" secondItem="br6-Sb-0XW" secondAttribute="trailing" constant="14" id="5vA-7b-Fwq"/>
-                                    <constraint firstItem="snx-Kg-WvC" firstAttribute="leading" secondItem="br6-Sb-0XW" secondAttribute="trailing" constant="57" id="Frv-3h-2g0"/>
                                     <constraint firstAttribute="trailing" secondItem="JOs-X7-luA" secondAttribute="trailing" constant="13" id="Hym-9q-EPN"/>
                                     <constraint firstItem="br6-Sb-0XW" firstAttribute="leading" secondItem="FnG-w4-iA4" secondAttribute="leading" constant="8" id="Mf3-J2-pXi"/>
                                     <constraint firstItem="br6-Sb-0XW" firstAttribute="height" secondItem="FnG-w4-iA4" secondAttribute="height" multiplier="0.95" id="Njq-ga-Kms"/>
                                     <constraint firstItem="xjB-eS-S9f" firstAttribute="top" secondItem="FnG-w4-iA4" secondAttribute="top" constant="16" id="V6v-vg-ayQ"/>
+                                    <constraint firstItem="snx-Kg-WvC" firstAttribute="centerY" secondItem="xjB-eS-S9f" secondAttribute="centerY" id="VXd-lI-RvO"/>
                                     <constraint firstItem="JOs-X7-luA" firstAttribute="leading" secondItem="br6-Sb-0XW" secondAttribute="trailing" constant="121" id="VmV-vG-90r"/>
-                                    <constraint firstAttribute="bottom" secondItem="snx-Kg-WvC" secondAttribute="bottom" constant="176" id="XLD-hh-RDV"/>
+                                    <constraint firstItem="snx-Kg-WvC" firstAttribute="centerX" secondItem="xjB-eS-S9f" secondAttribute="centerX" id="gtg-S8-euT"/>
                                     <constraint firstAttribute="bottom" secondItem="JOs-X7-luA" secondAttribute="bottom" constant="236" id="jQX-ol-eYi"/>
-                                    <constraint firstAttribute="trailing" secondItem="snx-Kg-WvC" secondAttribute="trailing" constant="65" id="muB-eI-Ju2"/>
                                     <constraint firstItem="JOs-X7-luA" firstAttribute="top" secondItem="FnG-w4-iA4" secondAttribute="top" constant="7" id="uQG-qV-Wg7"/>
                                     <constraint firstItem="br6-Sb-0XW" firstAttribute="centerY" secondItem="FnG-w4-iA4" secondAttribute="centerY" id="uiu-qs-4mw"/>
-                                    <constraint firstItem="snx-Kg-WvC" firstAttribute="top" secondItem="FnG-w4-iA4" secondAttribute="top" constant="64" id="zfY-fZ-zJ3"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your e-mail here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OYX-8N-ESM">
-                                <rect key="frame" x="0.0" y="385" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="379" width="375" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="T86-V1-qJt"/>
                                 </constraints>
