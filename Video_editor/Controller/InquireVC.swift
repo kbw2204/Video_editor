@@ -17,9 +17,8 @@ class InquireVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     override func viewDidLoad() {
         super.viewDidLoad()
         TextView.font = UIFont.systemFont(ofSize: 12)
+        TextView.placeholderColor = UIColor(red: 0.34889753566796367, green: 0.4610360875867857, blue: 0.5644922560463874, alpha: 1)
         TextView.placeholder = "Please enter your email address"
-        
-        
     }
     
     @IBAction func SendAction(_ sender: UIButton) {
@@ -33,7 +32,6 @@ class InquireVC: UIViewController, UIImagePickerControllerDelegate, UINavigation
     @IBAction func DeleteImage(_ sender: UIButton) {
         SelectedImage.setImage(#imageLiteral(resourceName: "nil_img"), for: .normal)
     }
-    
     @IBAction func EditPicture(_ sender: UIButton) {
         let picker = UIImagePickerController()
         picker.sourceType = .photoLibrary
