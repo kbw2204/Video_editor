@@ -18,16 +18,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="ye8-UX-2dh">
-                                <rect key="frame" x="0.0" y="-334" width="375" height="1334"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaC-zv-4XN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="746-9O-snc">
+                                        <rect key="frame" x="74" y="554" width="227" height="43"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="746-9O-snc" secondAttribute="height" multiplier="227:43" id="lFN-99-etK"/>
+                                        </constraints>
+                                        <string key="text">Copyright 2019. Vimosoft Inc.
+All rights reserved.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="WiZ-B3-0Tm">
+                                        <rect key="frame" x="131.5" y="277.5" width="112.5" height="112"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="WiZ-B3-0Tm" secondAttribute="height" multiplier="118:117" id="BzY-LR-CYz"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97763878107070923" green="0.27276018261909485" blue="0.33157190680503845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WiZ-B3-0Tm" firstAttribute="centerX" secondItem="yaC-zv-4XN" secondAttribute="centerX" id="RiA-G6-E9c"/>
+                                    <constraint firstItem="746-9O-snc" firstAttribute="centerX" secondItem="yaC-zv-4XN" secondAttribute="centerX" id="cld-xU-6lY"/>
+                                    <constraint firstItem="WiZ-B3-0Tm" firstAttribute="width" secondItem="yaC-zv-4XN" secondAttribute="width" multiplier="0.3" id="k93-rr-5pN"/>
+                                    <constraint firstItem="WiZ-B3-0Tm" firstAttribute="centerY" secondItem="yaC-zv-4XN" secondAttribute="centerY" id="tm7-WG-AnR"/>
+                                    <constraint firstAttribute="bottom" secondItem="746-9O-snc" secondAttribute="bottom" constant="70" id="vJ5-tS-2W8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ye8-UX-2dh" secondAttribute="trailing" id="Ikh-Ub-G2D"/>
-                            <constraint firstAttribute="bottom" secondItem="ye8-UX-2dh" secondAttribute="bottom" constant="-333" id="K3t-0y-Zqq"/>
-                            <constraint firstItem="ye8-UX-2dh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aNN-6N-xX2"/>
-                            <constraint firstItem="ye8-UX-2dh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="-334" id="oku-Uv-X0a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yaC-zv-4XN" secondAttribute="trailing" id="2uT-qj-Uys"/>
+                            <constraint firstItem="yaC-zv-4XN" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="6vw-Ek-6oO"/>
+                            <constraint firstItem="yaC-zv-4XN" firstAttribute="bottomMargin" secondItem="Ze5-6b-2t3" secondAttribute="bottom" constant="-8" id="FfF-Ai-7hV"/>
+                            <constraint firstItem="yaC-zv-4XN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RMC-Gc-i9d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -38,6 +65,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchScreen" width="750" height="1334"/>
+        <image name="launchScreen" width="180" height="180"/>
     </resources>
 </document>
