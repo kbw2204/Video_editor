@@ -17,6 +17,10 @@
     - [x] autoLayout 
     - [x] 가격 라벨
     - [x] 버튼 이벤트 넣기
+	- [ ] 버튼 클릭시 ScrollView 띄우기
+	  - [ ] ScrollView
+	  - [ ] CardView
+	  - [ ] 이미지 가져오기
     - [x] 세일 gif 넣기
     - [x] 전체적이 UI
     - [x] 그리드 뷰 버튼형식 만들기
