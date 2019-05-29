@@ -8,18 +8,44 @@
 
 import UIKit
 
-class marketVC: UIViewController {
+class marketVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+
+    
     @IBOutlet var underLine_label: UILabel!
     @IBOutlet var saleGif: UIImageView!
+    let cellId = "cellId"
+    let imageArray = [UIImage(named: "1"),UIImage(named: "2"),UIImage(named: "3"),UIImage(named: "4"),UIImage(named: "5"),UIImage(named: "6"),UIImage(named: "7"),UIImage(named: "8"),UIImage(named: "9"),UIImage(named: "10"),UIImage(named: "11")]
     
-    
+    let CollectionV = UICollectionView(frame: CGRect.init(), collectionViewLayout: UICollectionViewLayout.init())
     override func viewDidLoad() {
         super.viewDidLoad()
         // 14000 세일 취소선
         strikethrough()
         saleGif.image = UIImage.gif(name: "sale")
     }
+    override func viewWillAppear(_ animated: Bool) {
+        setupCollectionView()
+    }
     // function
+    func setupCollectionView(){
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 30)
+        layout.itemSize = CGSize(width: self.view.frame.width * 0.7 , height: self.view.frame.height * 0.55)
+        layout.scrollDirection = UICollectionView.ScrollDirection.horizontal
+        CollectionV.collectionViewLayout = layout
+        CollectionV.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        CollectionV.showsHorizontalScrollIndicator = false
+        CollectionV.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
+        CollectionV.delegate = self
+        CollectionV.dataSource = self
+        //register
+        CollectionV.register(MarketCollectionViewCell.self, forCellWithReuseIdentifier: cellId)
+        // event
+        let tap_CollectionV = UITapGestureRecognizer(target: self, action:  #selector(back(_:)))
+        CollectionV.addGestureRecognizer(tap_CollectionV)
+        self.view.addSubview(CollectionV)
+        CollectionV.isHidden = true
+    }
     // 취소선
     func strikethrough() {
         let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "￦14,000")
@@ -29,7 +55,9 @@ class marketVC: UIViewController {
     @objc func cancelBtnAction(_ :UIButton){
         self.dismiss(animated: true, completion: nil)
     }
-    
+    @objc func back(_ :Any){
+        CollectionV.isHidden = true
+    }
     // 구매 알람창(Touch ID) 만들기
     func createCustimVC(ValueTitle: String, Price: String) -> UIViewController {
         let VC = UIViewController()
@@ -163,17 +191,23 @@ class marketVC: UIViewController {
     
     // 버튼 바구니 안에 버튼 클릭시
     @IBAction func ButtonAction(_ sender: UIButton) {
- 
-        let Market_alert = UIAlertController(title: sender.currentTitle!, message: "클릭되었습니다", preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "OK", style: .destructive, handler: nil)
-        Market_alert.addAction(alertAction)
-        present(Market_alert, animated: false, completion: nil)
+        CollectionV.isHidden = false
     }
     
     // 상태바 지우기
     override var prefersStatusBarHidden: Bool {
         return true
     }
-
-
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return imageArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MarketCollectionViewCell
+        
+        cell.img.image = imageArray[indexPath.row]
+        
+        return cell
+        
+    }
 }
