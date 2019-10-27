@@ -10,12 +10,15 @@ import UIKit
 @IBDesignable
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    //MARK: var
     @IBOutlet weak var NavigationBar: UINavigationItem!
     @IBOutlet weak var Button_View: UIView!
     @IBOutlet weak var Button_View2: UIView!
     @IBOutlet var gif_ImageView1: UIImageView!
     @IBOutlet var gif_ImageView2: UIImageView!
     
+    //MARK: - View
     override func viewDidLoad() {
         super.viewDidLoad()
         // tap 제스쳐 등록
@@ -25,9 +28,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         gif_ImageView1.image = UIImage.gif(name: "vlloGif1")
         gif_ImageView2.image = UIImage.gif(name: "vlloGif2")
         // navigation title Gif
-        
         navigationItem.titleView = UIImageView(image: UIImage.gif(name: "vlloTitle"))
-        
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
     // function
@@ -49,7 +54,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         gif_ImageView2.isUserInteractionEnabled = true
     }
     
-    // UIImagePicker
+    //MARK: - IBAction
+    @IBAction func back_Action(_ segue: UIStoryboardSegue) {
+        
+    }
+    
+    //MARK: - objc
     @objc func PhtoAction(_ sender: UITapGestureRecognizer) {
         // Do what you want
         print("버튼 뷰 클릭됬습니다.")
@@ -59,12 +69,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         picker.allowsEditing = true
         
         self.present(picker, animated: true)
-    }
-    @IBAction func back_Action(_ segue: UIStoryboardSegue) {
-        
-    }
-    override var prefersStatusBarHidden: Bool {
-        return true
     }
 }
 

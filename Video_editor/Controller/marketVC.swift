@@ -9,24 +9,33 @@
 import UIKit
 
 class marketVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-
     
+    //MARK: - var
     @IBOutlet var underLine_label: UILabel!
     @IBOutlet var saleGif: UIImageView!
+    
     let cellId = "cellId"
     let imageArray = [UIImage(named: "1"),UIImage(named: "2"),UIImage(named: "3"),UIImage(named: "4"),UIImage(named: "5"),UIImage(named: "6"),UIImage(named: "7"),UIImage(named: "8"),UIImage(named: "9"),UIImage(named: "10"),UIImage(named: "11")]
     
     let CollectionV = UICollectionView(frame: CGRect.init(), collectionViewLayout: UICollectionViewLayout.init())
+    
+    //MARK: - View
     override func viewDidLoad() {
         super.viewDidLoad()
         // 14000 세일 취소선
         strikethrough()
         saleGif.image = UIImage.gif(name: "sale")
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         setupCollectionView()
     }
-    // function
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    //MARK: - function
     func setupCollectionView(){
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 30)
@@ -46,19 +55,13 @@ class marketVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         self.view.addSubview(CollectionV)
         CollectionV.isHidden = true
     }
-    // 취소선
+    
     func strikethrough() {
         let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "￦14,000")
         attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
         underLine_label.attributedText = attributeString
     }
-    @objc func cancelBtnAction(_ :UIButton){
-        self.dismiss(animated: true, completion: nil)
-    }
-    @objc func back(_ :Any){
-        CollectionV.isHidden = true
-    }
-    // 구매 알람창(Touch ID) 만들기
+    
     func createCustimVC(ValueTitle: String, Price: String) -> UIViewController {
         let VC = UIViewController()
         let safeV = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
@@ -66,7 +69,6 @@ class marketVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         
         let Top_height = self.view.frame.height / 12 // 약 50
         let margin_x = Int(self.view.frame.width / 8)
-        
         
         // TopView
         let TopView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: Top_height))
@@ -157,11 +159,6 @@ class marketVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         TouchIdLabel.font = UIFont.systemFont(ofSize: 20)
         BottomView.addSubview(TouchIdLabel)
         
-        //        TopView.backgroundColor = UIColor.red
-        //        MidView1.backgroundColor = UIColor.orange
-        //        MidView2.backgroundColor = UIColor.yellow
-        //        MidView3.backgroundColor = UIColor.green
-        //        BottomView.backgroundColor = UIColor.blue
         safeV.addSubview(TopView)
         safeV.addSubview(MidView1)
         safeV.addSubview(MidView2)
@@ -173,10 +170,25 @@ class marketVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         
         return VC
     }
+    
+    //MARK: - collectionView
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as? MarketCollectionViewCell else {
+            fatalError("MarketCollectionViewCell dequeueReusableCell err")
+        }
+        cell.img.image = imageArray[indexPath.row]
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return imageArray.count
+    }
+    
+    //MARK: - IBAction
     @IBAction func PurchaseButtonAction(_ sender: UIButton) {
         let Purchase_alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-//        let OkAction = UIAlertAction(title: "Ok", style: .default)
-//        Purchase_alert.addAction(OkAction)
+        
         // 주석
         if sender.titleLabel!.text == "￦9,900         " {
             let VC = createCustimVC(ValueTitle: "VLLO 풀 패키지", Price: "￦9,900")
@@ -185,7 +197,6 @@ class marketVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
             let VC = createCustimVC(ValueTitle: "광고제거", Price: "￦3,900")
             Purchase_alert.setValue(VC, forKey: "contentViewController")
         }
-    
         self.present(Purchase_alert, animated: true)
     }
     
@@ -194,20 +205,12 @@ class marketVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         CollectionV.isHidden = false
     }
     
-    // 상태바 지우기
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageArray.count
+    //MARK: - objc
+    @objc func cancelBtnAction(_ :UIButton){
+        self.dismiss(animated: true, completion: nil)
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! MarketCollectionViewCell
-        
-        cell.img.image = imageArray[indexPath.row]
-        
-        return cell
-        
+    @objc func back(_ :Any){
+        CollectionV.isHidden = true
     }
 }

@@ -9,6 +9,8 @@
 import UIKit
 
 class SettingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    //MARK: var
     @IBOutlet var SettingLabel: UILabel!
     @IBOutlet var SettingTableView: UITableView!
     
@@ -26,32 +28,38 @@ class SettingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         settingList(icon: #imageLiteral(resourceName: "message"), title: "문의하기"),
         settingList(icon: #imageLiteral(resourceName: "Icon-eto-cc"), title: "CC 라이센스"),
     ]
+    
     let cellId = "cellId1"
     
+    //MARK: - View
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.SettingTableView.delegate = self
-        self.SettingTableView.dataSource = self
-        // Do any additional setup after loading the view.
     }
-    // tableview
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    //MARK: - tableview
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = SettingTableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! SettingCell
+        guard let cell = SettingTableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as? SettingCell else {
+            fatalError("settingCell dequeueReusableCell err")
+        }
         cell.Setting_Label.text = list[indexPath.row].title
         cell.Setting_Image.image = list[indexPath.row].icon
         return cell
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
     }
-    // 선택 된 셀
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let indexNum = indexPath.row
         MvView(i: indexNum)
     }
     
-    // function
+    //MARK: - function
     func MvView(i: Int) {
         let youtube = "https://www.youtube.com/channel/UCvbmc3Bk4b_KSMxOi9-maNg"
         let instagram = "https://www.instagram.com/vllo_official/"
@@ -60,7 +68,7 @@ class SettingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let review = "https://itunes.apple.com/kr/app/vllo-aka-vimo-video-editor/id952050883?l=en&mt=8"
         
         switch i {
-        case 0:         //상점
+        case 0:
             self.performSegue(withIdentifier: "marketSegue", sender: self)
         case 1:
            gotoUrl(url: review)
@@ -79,20 +87,17 @@ class SettingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             print("indexNum switch err")
         }
     }
-    //사파리로 링크열기
+    
+    //사파리로 링크
     func gotoUrl(url : String) {
         if let url = URL(string: url) {
             UIApplication.shared.open(url, options: [:])
         }
     }
-    // 뒤로가기
+    
+    //MARK: - IBAction
     @IBAction func backToSettings(_ segue: UIStoryboardSegue) {
     
     }
-    // 상태바 지우기
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
-
 }
 
